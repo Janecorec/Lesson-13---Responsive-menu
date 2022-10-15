@@ -1,0 +1,95 @@
+@use 'mobile';
+
+$menu-text: 1.5em;
+$menu-text-color:yellow;
+$main-background: rgb(160, 20, 160);
+
+body{
+    font-family: 'Alkalami', serif;
+    padding: 20px;
+
+}
+
+.main-container{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.navi{
+    display: flex;
+}
+
+.nav{
+    background-color: $main-background;
+     display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+ .icon{
+    font-size: 2em;
+     display: none;
+ }
+
+& a{
+    display: inline-block;
+    padding: 15px 50px;
+    border-radius: 20px;
+    color: $menu-text-color;
+    text-decoration: none;
+    font-size: $menu-text;
+    text-align: center;
+&:hover{
+    color: $main-background;
+    background-color: $menu-text-color;
+    transition: all .2s ease-in-out;
+}
+}
+}
+
+
+.dropdown{
+    min-width: 200px;
+    border-radius: 20px;
+   display: block;
+}
+
+.dropdown:hover .disco-content{
+    display: block;
+    
+}
+
+.dropdown .disco-btn{
+    font-size: $menu-text;
+    border: none;
+    background-color: $main-background;
+    font-family: inherit;
+    color: $menu-text-color;
+&:hover{
+    color: $main-background;
+    background-color: $menu-text-color;
+    transition: all .2s ease-in-out;
+}
+
+}
+
+.disco-content{
+    background-color: $main-background;
+    min-width: 200px;
+    position: absolute;
+    display: none;
+    // box-shadow: 2px 2px 4px 0px black;
+    // z-index: 1;
+
+    a{
+        color: $menu-text-color;
+        padding: 20px;
+        display: block;
+    &:hover{
+        background-color: $menu-text-color;
+        display: block;
+    }
+    }
+
+}
+

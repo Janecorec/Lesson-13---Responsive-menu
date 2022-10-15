@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 13</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkalami&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="main-container">
+<div class="nav" id="mainmenu">
+    <ul class="navi" id="menu">
+        <li><a href="#index">Home</a></li>
+        <li><a href="#gigs">Gigs</a></li>
+        <li><div class="dropdown">
+         <button class="disco-btn">Discography
+        <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="disco-content">
+            <a href="#one">Mark I '68-'69</a>
+            <a href="#two">mark II '69-'73</a>
+            <a href="#three">mark III '73-'75</a>
+            <a href="#four">mark IV '75-76</a>
+            <a href="#five">mark V '89-'92</a>
+            <a href="#six">mark VI '94-'02</a>
+            <a href="#seven">mark VII '02-'21</a>
+        </div>
+    </div></li>
+    <li>   
+    <a href="#band">Band Members</a></li>
+    </ul>
+    <a class="icon" onclick="dropnav()"><i class="fa fa-bars"></i></a>
+</div>
+
+    </div>
+ 
+<script>
+       function dropNav() {
+        let drop = document.getElementById("menu");
+        if (drop.className === "navi") {
+          drop.className += " responsive";
+        } else {
+          drop.className = "navi";
+        }
+      }
+</script>
+
+</body>
+</html>

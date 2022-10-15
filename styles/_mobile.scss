@@ -1,0 +1,38 @@
+@media screen and (max-width: 600px) {
+
+body{
+    background-color: blue;
+}
+
+.main-container{
+}
+
+.nav{width: 100%;}
+
+    .navi li{
+        display: none;
+    }
+
+a{
+    padding: 0px;
+}
+
+.icon{
+    display: block !important;
+}
+   
+.navi.responsive{
+    position: relative;
+}
+
+.navi.responsive .icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.navi.responsive li{
+    display: block;
+}
+
+}
