@@ -20,6 +20,7 @@
   }
 
   .navi.responsive {
+    display: block;
     position: relative;
   }
 
